@@ -2,4 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+:root {
+    --body-bg-color: #061542;
+    --card-color: #FFF;
+
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+body {
+    background: var(--body-bg-color);
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.container {
+    border-radius: 12rem;
+    background: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 52rem;
+    height: 75rem;
+}
+.perfil {
+    width: 25.6rem;
+    height: 25.6rem;
+    border-radius: 50%;
+    margin: 6rem 13rem 0.5rem;
+
+    background: var(--card-color);
+}
+
+.perfil img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border: 3px solid var(--body-bg-color);
+}
+.name--infor {
+
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
 }
