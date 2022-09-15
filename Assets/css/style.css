@@ -28,8 +28,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 52rem;
-    height: 75rem;
+    justify-content: center;
 }
 .perfil {
     width: 25.6rem;
@@ -44,12 +43,49 @@ main {
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
-    border: 3px solid var(--body-bg-color);
+    border: 0.5rem solid var(--body-bg-color);
 }
 .name--infor {
-
-}
-.buttons {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--body-bg-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0 2rem 0;
+}
+.name--infor h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.name--infor h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
+button img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 3.2rem;
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5.2rem;
+
+    margin-bottom: 1.6rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: var(--body-bg-color);
+    color: var(--card-color);
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0;
+    
 }
