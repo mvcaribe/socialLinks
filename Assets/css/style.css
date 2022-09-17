@@ -16,32 +16,30 @@ body {
 main {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-
     
 }
 .container {
-    border-radius: 12rem;
+    border-radius: 10rem;
     background: var(--card-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .perfil {
-    width: 25.6rem;
-    height: 25.6rem;
+    display: flex;
+    justify-content: center;
     border-radius: 50%;
-    margin: 6rem 13rem 0.5rem;
-
+    margin: 2rem 10rem 0.5rem;
     background: var(--card-color);
+    
 }
 
 .perfil img {
     width: 25rem;
     height: 25rem;
+    object-fit: contain;
     border-radius: 50%;
     border: 0.5rem solid var(--body-bg-color);
 }
@@ -52,7 +50,7 @@ main {
     justify-content: center;
     color: var(--body-bg-color);
     text-transform: uppercase;
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0;
 }
 .name--infor h1 {
     font-weight: 700;
@@ -63,8 +61,14 @@ main {
     font-weight: 600;
     font-size: 1.6rem;
 }
+.buttons {
+    margin-bottom: 2rem;
+}
 a {
     text-decoration: none;
+}
+a:last-child {
+    display: none;
 }
 button img {
     width: 2.4rem;
@@ -72,11 +76,13 @@ button img {
     margin: 0 3.2rem;
 }
 .link {
+    width: 32rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     gap: 5.2rem;
 
-    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
     border: none;
     border-radius: 0.4rem;
     background: var(--body-bg-color);
@@ -88,4 +94,21 @@ button img {
     text-transform: uppercase;
     line-height: 0;
     
+}
+
+@media (max-width: 768px) {
+    .container {
+        border-radius: 7rem;
+    }
+    .perfil {
+        margin: 2rem 8rem 0.5rem;
+    }
+    .perfil img {
+        width: 16rem;
+        height: 16rem;
+    }
+    .link {
+        width: 25rem;
+        gap: 3.2rem;
+    }
 }
